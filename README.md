@@ -3,6 +3,7 @@
 docker run  -itd --net=host  --name ttnodeclient  --privileged=true --restart=always registry.cn-hangzhou.aliyuncs.com/744287383/autottnodeclient
 #创建容器
 ```
+需要等待5分钟才能运行下面的命令
 ```
 docker exec -it ttnodeclient  python3 /root/ttnode/TTnodeLogin.py
 #登录甜糖客户端并配置推送消息渠道
