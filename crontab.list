@@ -1,0 +1,7 @@
+30 6 * * * python3 /root/ttnode/AutoTTnodeClient.py
+
+#以下脚本不支持自定义时间，勿动。--------------------------------------------
+15 2 * * * /root/ttnode/updateFile.sh
+17 18 * * * /root/ttnode/updateFile.sh
+0 0 */7 * * rm -f /root/ttnode/AutoTTnodeClient.log
+#以上脚本不支持自定义时间，勿动。--------------------------------------------
